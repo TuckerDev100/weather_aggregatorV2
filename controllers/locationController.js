@@ -6,6 +6,7 @@ const { dailyHighLows } = require('../helpers/dailyHighLows');
 const getLocation = async (req, res) => {
   const { zip } = req.params;
   const apiKey = process.env.GOOGLE_GEOCACHE_KEY;
+  //NOTE: I know the .env file should be added to the gitignore. This is a demo and I will delete the key later
 
   try {
     const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=${apiKey}`);
@@ -79,7 +80,6 @@ const getStationId = async (locationResult) => {
     const gridData = gridResponse.data;
 
     if (gridData.properties && gridData.properties.gridId) {
-      console.log('GRID ID = ' + gridData.properties.gridId);
       return gridData.properties.gridId;
     } else {
       console.error('Grid ID not found in response');
@@ -149,4 +149,4 @@ const getHourlyData = async (gridId, intCoords) => {
   }
 };
 
-module.exports = { getLocation };
+module.exports = { getLocation, getStationId, getHourlyData };
