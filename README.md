@@ -4,7 +4,7 @@ Download the project.
 
 Ensure that nothing is currently running on port 3300
 
-CD into the weather_aggregator folder
+CD into the src/weather_aggregator folder
 
 run the command "npm start"
 
