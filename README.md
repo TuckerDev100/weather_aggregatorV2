@@ -23,4 +23,4 @@ I would also add a retry functionality. The final hourlyWeatherData endpoint in 
 
 It could also do with an error handling helper service to clean up the locationController. Too many lines dedicated to errors, error handling ought to be abstracted away!
 
-And last but not least, the .env file should be added to the gitignroe. I will destroy the key later, it just seemed rude to make you guys get your own key ¯\_(ツ)_/¯
+And last but not least, the .env file should be added to the gitignroe. I will destroy the key later, it just seemed rude to make you guys get your own key ¯\\_(ツ)_/¯
