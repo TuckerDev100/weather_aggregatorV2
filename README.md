@@ -17,7 +17,7 @@ and replace 80303 with whatever Zip Code you like.
 Get weather info for the week!
 
 # Roadmap
-If I were to continue working on it I would implement the tests that I had made the framework for. I started by writing tests after each function, but after I found out the final endpoint I wanted to use was deprecated, I ran out of time.
+If I were to continue working on it I would implement the tests that I had made the framework for. I started by writing tests after each function, but after I found out the final endpoint I wanted to use was deprecated, I had to refactor and ran out of time.
 
 I would also add a retry functionality. The final hourlyWeatherData endpoint in particular has a habit of giving a 500 error at random. I would have retried for 30 seconds before sending a final 500 error.
 
